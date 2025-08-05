@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V N Priyadharshini's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- 🌐 NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">V N Priyadharshini</div>
+
+        <!-- Desktop Nav -->
+        <ul class="nav-links">
+          <li><a href="#" onclick="scrollToSection('top')">Me</a></li>
+          <li>
+            <a href="#" onclick="scrollToSection('experience')">Experience</a>
+          </li>
+          <li><a href="#" onclick="scrollToSection('skills')">Skills</a></li>
+          <li>
+            <a href="#" onclick="scrollToSection('projects')">Projects</a>
+          </li>
+          <li><a href="#" onclick="scrollToSection('footer')">Ping Me</a></li>
+        </ul>
+
+        <!-- Mobile Icon -->
+        <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+          <i id="menu-icon" class="fas fa-bars"></i>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown -->
+      <ul class="mobile-nav-links" id="mobile-nav">
+        <li><a href="#" onclick="handleMobileNav('top')">Me</a></li>
+        <li>
+          <a href="#" onclick="handleMobileNav('experience')">Experience</a>
+        </li>
+        <li><a href="#" onclick="handleMobileNav('skills')">Skills</a></li>
+        <li><a href="#" onclick="handleMobileNav('projects')">Projects</a></li>
+        <li><a href="#" onclick="handleMobileNav('footer')">Ping Me</a></li>
+      </ul>
+    </nav>
+
+   
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Crafting Code.<br />Designing Impact.</h1>
+        <p>
+          A full-stack developer building scalable apps and delightful
+          interfaces.
+        </p>
+      </div>
+
+      <div class="product-grid">
+        <!-- Repeat this for each product -->
+        <a href="https://app.docsynecx.com/signin/" class="product-card">
+          <img src="/docsynecx-ui.png" alt="Docsynecx UI" />
+          <span class="product-title">Docsynecx</span>
+        </a>
+
+        <a href="https://idzone.in/" class="product-card">
+          <img src="/idzone-ui.png" alt="Idzone UI" />
+          <span class="product-title">Idzone</span>
+        </a>
+
+        <a
+          href="https://portfolio-dusky-tau-18.vercel.app/"
+          class="product-card"
+        >
+          <img src="/portfolio-web.png" alt="Portfolio" />
+          <span class="product-title">Portfolio</span>
+        </a>
+      </div>
+    </section>
+    <section class="experience-section">
+      <div class="container">
+        <h2 class="section-heading">
+          My
+          <span class="highlighted-text">Experience</span>
+        </h2>
+        <p class="section-subheading">
+          Freelancing <span class="separator">|</span> Internships
+          <span class="separator">|</span> FullStack Development
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Vertical Timeline Line -->
+        <!-- <div class="timeline-line"></div> -->
+
+        <!-- Timeline Entries -->
+        <div class="timeline-entries">
+          <div class="timeline-entry">
+            <div class="entry-content">
+              <h3>Freelance Developer</h3>
+              <p>
+                Worked on various projects as a freelancer, delivering
+                full-stack solutions for clients.
+              </p>
+              <span>Jan 2024 – Present</span>
+            </div>
+          </div>
+
+          <div class="timeline-entry">
+            <div class="entry-content">
+              <h3>Application Development Intern @ Xyloinc</h3>
+              <p>
+                Developed and maintained applications, improving UX and
+                functionality.
+              </p>
+              <span>June 2024 – Dec 2024</span>
+            </div>
+          </div>
+
+          <div class="timeline-entry">
+            <div class="entry-content">
+              <h3>FullStack Developer Intern @ InfoSphere IT Solutions</h3>
+              <p>
+                Built scalable web apps focusing on both frontend and backend.
+              </p>
+              <span>Dec 2024 – Present</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+      <div class="container">
+        <!-- Project 1 -->
+        <div class="project">
+          <div class="project-img">
+            <img src="/docsynecx.svg" alt="Docsynecx Project" />
+          </div>
+          <div class="project-info">
+            <h2>Docsynecx - AI OCR</h2>
+            <p>
+              End-to-end AI-powered OCR web app for document text extraction
+              using generative AI. Built with Next.js and PostgreSQL.
+            </p>
+            <a href="https://app.docsynecx.com/" target="_blank" class="btn"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project reverse">
+          <div class="project-img">
+            <img src="/idzone.png" alt="IDZONE Project" />
+          </div>
+          <div class="project-info">
+            <h2>IDZONE - Digital ID Card</h2>
+            <p>
+              Digital ID card platform with templates, payments, and real-time
+              data. Built using Next.js, MongoDB, Prisma.
+            </p>
+            <a href="https://idzone.in/" target="_blank" class="btn"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; 2025 V N Priyadharshini. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="tel:+919482124277" title="Call"
+            ><i class="fas fa-phone"></i
+          ></a>
+          <a href="mailto:vn.dharshini@gmail.com" title="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/priyadharshini-vn-6b9b2128a/"
+            target="_blank"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/Priyadharshini2310"
+            target="_blank"
+            title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script>function toggleMobileMenu() {
+  const mobileNav = document.getElementById("mobile-nav");
+  const menuIcon = document.getElementById("menu-icon");
+  const isOpen = mobileNav.style.display === "flex";
+  mobileNav.style.display = isOpen ? "none" : "flex";
+  menuIcon.className = isOpen ? "fas fa-bars" : "fas fa-times";
+}
+
+function handleMobileNav(sectionId) {
+  scrollToSection(sectionId);
+  toggleMobileMenu();
+}</script>
+  </body>
+</html>
