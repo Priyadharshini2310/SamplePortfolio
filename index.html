@@ -24,7 +24,7 @@
           <li>
             <a href="#" onclick="scrollToSection('experience')">Experience</a>
           </li>
-          <li><a href="#" onclick="scrollToSection('skills')">Skills</a></li>
+          <li><a href="#" onclick="scrollToSection('projects')">Skills</a></li>
           <li>
             <a href="#" onclick="scrollToSection('projects')">Projects</a>
           </li>
@@ -51,7 +51,7 @@
 
    
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="top" class="hero">
       <div class="container">
         <h1>Crafting Code.<br />Designing Impact.</h1>
         <p>
@@ -81,7 +81,7 @@
         </a>
       </div>
     </section>
-    <section class="experience-section">
+    <section id="experience"  class="experience-section">
       <div class="container">
         <h2 class="section-heading">
           My
@@ -135,7 +135,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="projects">
+    <section id="projects" class="projects">
       <div class="container">
         <!-- Project 1 -->
         <div class="project">
@@ -173,7 +173,7 @@
       </div>
     </section>
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container footer-content">
         <p>&copy; 2025 V N Priyadharshini. All rights reserved.</p>
         <div class="social-icons">
@@ -209,6 +209,15 @@
 function handleMobileNav(sectionId) {
   scrollToSection(sectionId);
   toggleMobileMenu();
-}</script>
+
+}
+// ✅ Scroll to section by ID smoothly
+function scrollToSection(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+</script>
   </body>
 </html>
